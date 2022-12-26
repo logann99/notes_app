@@ -1,10 +1,12 @@
 import 'package:hive/hive.dart';
 part 'note_model.g.dart';
-//1- extends
+//1- extends class
 //2- Hive Type
 //2-Hive Field
 //3- part
 //4-write this line in terminal flutter packages pub run build_runner build
+//5- init Flutter in main.dart
+//6- const kNotes /openBox
 @HiveType(typeId: 0)
 class NoteModel extends HiveObject {
   @HiveField(0)
