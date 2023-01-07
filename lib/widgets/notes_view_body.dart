@@ -1,10 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../cubits/notes_cubit/notes_cubit.dart';
 import 'custom_app_bar.dart';
 import 'notes_list_view.dart';
 
-class NotesViewBody extends StatelessWidget {
+class NotesViewBody extends StatefulWidget {
   const NotesViewBody({super.key});
+
+  @override
+  State<NotesViewBody> createState() => _NotesViewBodyState();
+}
+
+class _NotesViewBodyState extends State<NotesViewBody> {
 //4 Custom AppBar
+  @override
+  //Fuck u
+  void initState() {
+    //it called before ui build and must be called
+    BlocProvider.of<NotesCubit>(context).fetchAllNotesMethod();
+    super.initState;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,5 +42,3 @@ class NotesViewBody extends StatelessWidget {
     );
   }
 }
-
-
