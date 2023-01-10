@@ -1,6 +1,8 @@
 # notes_app
 
-A new Flutter project.
+A new Flutter project "Notes App".
+From Tharwat Samy Course 
+ TharwatSamyNotesAppgitHub
 
 ## Getting Started
 
