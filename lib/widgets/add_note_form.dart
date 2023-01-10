@@ -67,7 +67,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     //ForDate format from intl package
                     var currentDate = DateTime.now();
                     var formattedCurrentDate =
-                        DateFormat('dd-mm-yyyy').format(currentDate);
+                        DateFormat.yMMMEd().format(currentDate);
                     //ForDate
                     var noteModel = NoteModel(
                         title: title!,
